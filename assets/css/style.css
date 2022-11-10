@@ -20,6 +20,8 @@ html {
 .cabecalho2 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .cabecalho2 ul {
@@ -37,9 +39,7 @@ html {
 }
 
 .nav-item, .nav-link {
-  padding-top: 42px;
   list-style-type: none;
-  align-items: center;
   gap: .8rem;
 }
 
@@ -72,7 +72,7 @@ main {
 }
 
 .logo {
-  width: 120px;
+  width: 8rem;
 }
 
 .titulo {
@@ -89,7 +89,7 @@ button:hover {
 }
 
 .div-h2 {
-  margin: 0 10em;
+  margin: 0 6rem;
 }
 
 .texto-h2, .o-que-faremos-texto {
@@ -128,6 +128,11 @@ button:hover {
   margin-top: auto;
   font-family: 'EB Garamond', serif;
   font-size: 50px;
+}
+
+.quem-somos-itens {
+  font-size: 30px;
+  line-height: 4rem;
 }
 
 .servicos {
@@ -306,18 +311,6 @@ footer,
   color: rgb(100, 32, 32);
 }
 
-.titulo-rodape {
-  color: white;
-  font-family: 'EB Garamond', serif;
-  font-size: 40px;
-  font-weight: lighter;
-}
-
-.quem-somos-itens {
-  font-size: 30px;
-  line-height: 4rem;
-}
-
 .div-botao-ir-para-o-topo {
   align-items: right;
 }
@@ -331,11 +324,6 @@ footer,
 .fa-arrow-up {
   font-size: 50px;
   color: rgba(5, 5, 5, 0.904);
-}
-
-.nav-rodape {
-  display: inline-block;
-  text-align: center;
 }
 
 .o-que-faremos-texto {
@@ -354,31 +342,13 @@ footer,
   align-items: center;
 }
 
-.botao-whatsapp-consulta,
-.botao-whatsapp-sobre-revisao,
-.botao-whatsapp-mandado-de-seguranca {
+.botao-wa {
   background: rgb(58, 214, 58);
   border-radius: 25px;
   height: 50px;
-  width: 25rem;
+  width: 23rem;
   border: none;
   cursor: pointer;
-}
-
-.botao-whatsapp-planejamento {
-  background: rgb(58, 214, 58);
-  border-radius: 25px;
-  height: 50px;
-  width: 25rem;
-  border: none;
-}
-
-.botao-whatsapp-revisao-vida-toda {
-  background: rgb(58, 214, 58);
-  border-radius: 25px;
-  height: 50px;
-  width: 25rem;
-  border: none;
 }
 
 .botao-whatsapp {
@@ -394,6 +364,7 @@ footer,
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
+  font-size: 9px;
 }
 
 .icone-botao-wa {
@@ -408,6 +379,28 @@ footer,
   justify-content: center;
   background-color: rgb(100, 32, 32);
   color: white;
+}
+
+.container-rodape {
+  width: 65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo-rodape {
+  width: 18rem;
+}
+
+.container-endereco-contato-rodape {
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-endereco-rodape, .whatsapp-rodape, .email-rodape {
+  font-size: 18px;
+  padding: .5rem;
 }
 
 @media(max-width: 1280px) {
@@ -498,6 +491,18 @@ footer,
 
   .abrir {
     display: block;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .texto-h2 {
+    font-size: 20px;
+  }
+
+  .texto-h3 {
+    font-size: 18px;
   }
 
   .div-secoes {
