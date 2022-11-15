@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'EB Garamond', serif;
 }
 
 html {
@@ -47,7 +48,6 @@ html {
   text-decoration: none;
   padding: 0;
   color: rgb(100, 32, 32);
-  font-family: "Nanum Gothic", Sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -59,6 +59,31 @@ a:hover {
 .link-telefone, .link-email {
   color: white;
 }
+
+@keyframes texto-cascata {
+  from {
+    transform: translateY(-95px);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(0px);
+    opacity: 1;
+  }
+}
+
+.titulo {
+  animation: texto-cascata 3s;
+}
+
+.texto-h2 {
+  animation: texto-cascata 3s;
+}
+
+.texto-h3 {
+  animation: texto-cascata 3s;
+}
+
 
 main {
   justify-items: center;
@@ -92,10 +117,6 @@ button:hover {
   margin: 0 6rem;
 }
 
-.texto-h2, .o-que-faremos-texto {
-  font-family: 'EB Garamond', serif;
-}
-
 .texto-h2 {
   font-size: 30px;
   font-weight: bold;
@@ -126,7 +147,6 @@ button:hover {
 
 .maressa-quem-somos {
   margin-top: auto;
-  font-family: 'EB Garamond', serif;
   font-size: 50px;
 }
 
@@ -209,7 +229,7 @@ button:hover {
 .texto-revisao-beneficios,
 .texto-revisao-vida-toda,
 .texto-mandado-de-seguranca {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .texto-consultoria-previdenciaria {
@@ -292,20 +312,10 @@ button:hover {
   font-size: large;
 }
 
-footer,
-.titulo,
-.titulo-aposentadoria,
-.titulo-beneficios,
-.titulo-servicos,
-.quem-somos-itens {
-  font-family: 'EB Garamond', serif;
-}
-
 .titulo-quem-somos,
 .titulo-aposentadoria,
 .titulo-beneficios,
 .titulo-servicos {
-  font-family: 'EB Garamond', serif;
   font-size: 40px;
   font-weight: lighter;
   color: rgb(100, 32, 32);
@@ -327,7 +337,7 @@ footer,
 }
 
 .o-que-faremos-texto {
-  font-size: 30px;
+  font-size: 2rem;
   margin-top: auto;
   color: rgb(100, 32, 32);
 }
@@ -345,24 +355,25 @@ footer,
 .botao-wa {
   background: rgb(58, 214, 58);
   border-radius: 25px;
-  height: 50px;
-  width: 23rem;
+  height: 40px;
+  width: 20rem;
   border: none;
   cursor: pointer;
+  padding: 5px;
 }
 
 .botao-whatsapp {
   background: rgb(58, 214, 58);
   border-radius: 25px;
-  height: 50px;
-  width: 15rem;
+  height: 40px;
+  width: 13rem;
   border: none;
   margin: 30px;
 }
 
 .texto-whatsapp {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Sans-serif;
   font-weight: 800;
   font-size: 9px;
 }
@@ -382,7 +393,7 @@ footer,
 }
 
 .container-rodape {
-  width: 65rem;
+  width: 60rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -391,6 +402,11 @@ footer,
 
 .logo-rodape {
   width: 18rem;
+}
+
+.info-contato {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .container-endereco-contato-rodape {
@@ -410,15 +426,15 @@ footer,
 
   .texto-consultoria-previdenciaria,
   .texto-planejamento-previdenciario {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .texto-revisao-beneficios {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   .texto-revisao-vida-toda {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .botao-whatsapp-consulta,
@@ -464,7 +480,10 @@ footer,
   .icone-menu {
     display: block;
     text-align: center;
-    margin: 2rem;
+  }
+
+  .icone {
+    width: 1.5rem;
   }
 
   .icone-menu button {
@@ -472,6 +491,7 @@ footer,
     cursor: pointer;
     border: none;
     border-radius: 3px;
+    height: 1.5rem;
   }
 
   .menu-responsivo ul {
@@ -485,20 +505,39 @@ footer,
     display: block;
   }
 
+  .div-h2 {
+    margin: 0 2rem;
+  }
+
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .abrir {
     display: block;
   }
 
-  .titulo {
-    font-size: 40px;
+  .titulo, .titulo-quem-somos {
+    font-size: 2rem;
   }
 
-  .texto-h2 {
-    font-size: 20px;
+  .maressa-quem-somos,
+  .titulo-servicos,
+  .titulo-aposentadoria,
+  .titulo-beneficios {
+    font-size: 2rem;
+  }
+
+  .o-que-faremos-texto {
+    font-size: 1.5rem;
+  }
+
+  .fa-arrow-down {
+    font-size: 2rem;
+  }
+
+  .texto-h2, .fa-check {
+    font-size: 1rem;
   }
 
   .texto-h3 {
@@ -514,9 +553,15 @@ footer,
     flex-direction: column;
   }
 
-  .aposentadoria, .beneficios {
-    width: 38rem;
-    height: 28rem;
+  .aposentadoria {
+    width: 19rem;
+    height: 26rem;
+    padding: 20px;
+  }
+
+  .beneficios {
+    width: 19rem;
+    height: 23rem;
     padding: 20px;
   }
 
@@ -534,7 +579,82 @@ footer,
   .planejamento-previdenciario,
   .revisao-beneficios,
   .revisao-vida-toda {
-    width: 35rem;
-    height: 18rem;
+    width: 17rem;
+    height: 14rem;
+  }
+
+  .titulo-consultoria-prev,
+  .titulo-planejamento-prev,
+  .titulo-revisao-benef,
+  .titulo-revisao-vida-toda,
+  .titulo-mandado-de-seg {
+    font-size: 1.5rem;
+  }
+
+  .texto-consultoria-previdenciaria,
+  .texto-planejamento-previdenciario,
+  .texto-revisao-beneficios,
+  .texto-revisao-vida-toda,
+  .texto-mandado-de-seguranca {
+    font-size: 1rem;
+  }
+
+  .texto-revisao-beneficios {
+    margin-bottom: 2rem;
+  }
+
+  .botao-wa {
+    width: 18rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .logo-rodape {
+    padding-top: .5rem;
+    width: 13rem;
+  }
+
+  .info-contato {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  .endereco {
+    font-size: .8rem;
+  }
+
+  .fa-whatsapp, .fa-envelope {
+    font-size: .8rem;
+  }
+
+  .container-rodape {
+    width: 18rem;
+    flex-direction: column;
+  }
+
+  .fa-arrow-up {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 360px) {
+  .nav-link, .link-telefone, .link-email {
+    font-size: 13px;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+
+  .aposentadoria {
+    width: 17rem;
+    height: 27rem;
+    padding: 20px;
+  }
+
+  .beneficios {
+    width: 17rem;
+    height: 24rem;
+    padding: 20px;
   }
 }
