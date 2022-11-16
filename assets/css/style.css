@@ -604,7 +604,7 @@ button:hover {
   }
 
   .botao-wa {
-    width: 18rem;
+    width: 17rem;
     border: none;
     cursor: pointer;
   }
@@ -656,5 +656,30 @@ button:hover {
     width: 17rem;
     height: 24rem;
     padding: 20px;
+  }
+
+  .mandado-de-seguranca,
+  .consultoria-previdenciaria,
+  .planejamento-previdenciario,
+  .revisao-beneficios,
+  .revisao-vida-toda {
+    width: 16rem;
+    height: 14rem;
+  }
+
+  .botao-wa {
+    width: 16rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .texto-whatsapp {
+    font-size: 7px;
+  }
+}
+
+@media(max-width: 320px) {
+  .nav-link, .link-telefone, .link-email {
+    font-size: 12px;
   }
 }
