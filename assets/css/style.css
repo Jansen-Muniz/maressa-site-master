@@ -602,9 +602,12 @@ button:hover {
   .texto-consultoria-previdenciaria,
   .texto-planejamento-previdenciario,
   .texto-revisao-beneficios,
-  .texto-revisao-vida-toda,
   .texto-mandado-de-seguranca {
     font-size: 1rem;
+  }
+
+  .texto-revisao-vida-toda {
+    font-size: .8rem;
   }
 
   .texto-revisao-beneficios {
