@@ -62,7 +62,7 @@ a:hover {
 
 @keyframes texto-cascata {
   from {
-    transform: translateY(-95px);
+    transform: translateY(-100px);
     opacity: 0;
   }
 
@@ -73,15 +73,15 @@ a:hover {
 }
 
 .titulo {
-  animation: texto-cascata 2s;
+  animation: texto-cascata 4s;
 }
 
 .texto-h2 {
-  animation: texto-cascata 2s;
+  animation: texto-cascata 4s;
 }
 
 .texto-h3 {
-  animation: texto-cascata 2s;
+  animation: texto-cascata 4s;
 }
 
 
@@ -375,7 +375,7 @@ button:hover {
   color: white;
   font-family: "Roboto", Sans-serif;
   font-weight: 800;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .icone-botao-wa {
@@ -588,7 +588,7 @@ button:hover {
   .revisao-beneficios,
   .revisao-vida-toda {
     width: 17rem;
-    height: 12rem;
+    height: 15rem;
   }
 
   .titulo-consultoria-prev,
@@ -604,7 +604,7 @@ button:hover {
   .texto-revisao-beneficios,
   .texto-revisao-vida-toda,
   .texto-mandado-de-seguranca {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   .texto-revisao-beneficios {
@@ -643,11 +643,39 @@ button:hover {
   .fa-arrow-up {
     font-size: 2rem;
   }
+
+  @keyframes texto-cascata {
+    from {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+
+    to {
+      transform: rotateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .titulo {
+    animation: texto-cascata 4s;
+  }
+
+  .texto-h2 {
+    animation: texto-cascata 4s;
+  }
+
+  .texto-h3 {
+    animation: texto-cascata 4s;
+  }
 }
 
 @media(max-width: 360px) {
-  .nav-link, .link-telefone, .link-email {
-    font-size: 12px;
+  .link-telefone, .link-email {
+    font-size: .7rem;
+  }
+
+  .nav-link {
+    font-size: .9rem;
   }
 
   .logo {
@@ -672,7 +700,7 @@ button:hover {
   .revisao-beneficios,
   .revisao-vida-toda {
     width: 16rem;
-    height: 12rem;
+    height: 14rem;
   }
 
   .botao-wa {
@@ -682,6 +710,6 @@ button:hover {
   }
 
   .texto-whatsapp {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
