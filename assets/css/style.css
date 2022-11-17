@@ -73,15 +73,15 @@ a:hover {
 }
 
 .titulo {
-  animation: texto-cascata 3s;
+  animation: texto-cascata 2s;
 }
 
 .texto-h2 {
-  animation: texto-cascata 3s;
+  animation: texto-cascata 2s;
 }
 
 .texto-h3 {
-  animation: texto-cascata 3s;
+  animation: texto-cascata 2s;
 }
 
 
@@ -421,7 +421,7 @@ button:hover {
 
 @media(max-width: 1280px) {
   .mandado-de-seguranca {
-    width: 50.7em;
+    width: 50.7rem;
   }
 
   .texto-consultoria-previdenciaria,
@@ -456,11 +456,15 @@ button:hover {
   }
 
   .mandado-de-seguranca {
-    width: 46em;
+    width: 46rem;
   }
 }
 
 @media(max-width: 999px) {
+  .link-telefone, .link-email {
+    font-size: 13px;
+  }
+
   .div-logo {
     text-align: center;
   }
@@ -525,7 +529,7 @@ button:hover {
   .titulo-servicos,
   .titulo-aposentadoria,
   .titulo-beneficios {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .o-que-faremos-texto {
@@ -553,14 +557,18 @@ button:hover {
     flex-direction: column;
   }
 
+  .imagem-aposentadoria, .imagem-beneficios {
+    width: 4rem;
+  }
+
   .aposentadoria {
-    width: 19rem;
+    width: 17rem;
     height: 26rem;
     padding: 20px;
   }
 
   .beneficios {
-    width: 19rem;
+    width: 17rem;
     height: 23rem;
     padding: 20px;
   }
@@ -580,7 +588,7 @@ button:hover {
   .revisao-beneficios,
   .revisao-vida-toda {
     width: 17rem;
-    height: 14rem;
+    height: 12rem;
   }
 
   .titulo-consultoria-prev,
@@ -588,7 +596,7 @@ button:hover {
   .titulo-revisao-benef,
   .titulo-revisao-vida-toda,
   .titulo-mandado-de-seg {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .texto-consultoria-previdenciaria,
@@ -596,11 +604,11 @@ button:hover {
   .texto-revisao-beneficios,
   .texto-revisao-vida-toda,
   .texto-mandado-de-seguranca {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .texto-revisao-beneficios {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .botao-wa {
@@ -639,7 +647,7 @@ button:hover {
 
 @media(max-width: 360px) {
   .nav-link, .link-telefone, .link-email {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .logo {
@@ -664,7 +672,7 @@ button:hover {
   .revisao-beneficios,
   .revisao-vida-toda {
     width: 16rem;
-    height: 14rem;
+    height: 12rem;
   }
 
   .botao-wa {
@@ -675,11 +683,5 @@ button:hover {
 
   .texto-whatsapp {
     font-size: 7px;
-  }
-}
-
-@media(max-width: 320px) {
-  .nav-link, .link-telefone, .link-email {
-    font-size: 12px;
   }
 }
