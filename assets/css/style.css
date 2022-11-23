@@ -331,9 +331,9 @@ button:hover {
   right: 5px;
 }
 
-.fa-arrow-up {
+.fa-arrow-circle-up {
   font-size: 50px;
-  color: rgba(5, 5, 5, 0.904);
+  color: rgb(0, 0, 0);
 }
 
 .o-que-faremos-texto {
@@ -385,7 +385,7 @@ button:hover {
 .rodape {
   margin-top: auto;
   display: flex;
-  height: 20em;
+  height: 16rem;
   align-items: center;
   justify-content: center;
   background-color: rgb(100, 32, 32);
@@ -415,8 +415,23 @@ button:hover {
 }
 
 .container-endereco-rodape, .whatsapp-rodape, .email-rodape {
-  font-size: 18px;
+  font-size: 1rem;
   padding: .5rem;
+}
+
+.div-desenvolvido-por {
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(48, 27, 27);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  margin-top: 16.5rem;
+}
+
+.fa-instagram {
+  margin-left: 1rem;
 }
 
 @media(max-width: 1280px) {
@@ -461,6 +476,76 @@ button:hover {
 }
 
 @media(max-width: 999px) {
+  .div-secoes {
+    margin: 0 1rem;
+  }
+
+  .aposentadoria, .beneficios {
+    width: 19rem;
+    height: 28rem;
+  }
+
+  .mandado-de-seguranca {
+    width: 38.5rem;
+  }
+
+  .consultoria-previdenciaria,
+  .planejamento-previdenciario,
+  .revisao-beneficios,
+  .revisao-vida-toda {
+    width: 17rem;
+    height: 15rem;
+  }
+
+  .titulo-consultoria-prev,
+  .titulo-planejamento-prev,
+  .titulo-revisao-benef,
+  .titulo-revisao-vida-toda,
+  .titulo-mandado-de-seg {
+    font-size: 1.3rem;
+  }
+
+  .texto-consultoria-previdenciaria,
+  .texto-planejamento-previdenciario,
+  .texto-revisao-beneficios,
+  .texto-mandado-de-seguranca {
+    font-size: 1rem;
+  }
+
+  .texto-revisao-vida-toda {
+    font-size: .8rem;
+  }
+
+  .texto-revisao-beneficios {
+    margin-bottom: 2.5rem;
+  }
+
+  .botao-wa {
+    width: 16rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .logo-rodape {
+    padding-top: .3rem;
+    width: 13rem;
+  }
+
+  .info-contato {
+    margin: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .endereco {
+    font-size: .8rem;
+  }
+
+  .fa-whatsapp, .fa-envelope {
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: 700px) {
   .link-telefone, .link-email {
     font-size: 13px;
   }
@@ -643,7 +728,7 @@ button:hover {
     flex-direction: column;
   }
 
-  .fa-arrow-up {
+  .fa-arrow-circle-up {
     font-size: 2rem;
   }
 
@@ -714,5 +799,27 @@ button:hover {
 
   .texto-whatsapp {
     font-size: 10px;
+  }
+
+  .rodape {
+    height: 20rem;
+  }
+
+  .container-endereco-rodape, .whatsapp-rodape, .email-rodape {
+    font-size: .7rem;
+  }
+
+  .div-desenvolvido-por {
+    width: 100%;
+    height: 2rem;
+    margin-top: 20rem;
+  }
+
+  .texto-desenvolvido-por, .fa-instagram {
+    font-size: .6rem;
+  }
+
+  .fa-instagram {
+    margin-left: 1rem;
   }
 }
