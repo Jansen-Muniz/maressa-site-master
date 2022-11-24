@@ -102,7 +102,7 @@ main {
 
 .titulo {
   color: white;
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: 200;
   font-weight: bold;
   margin-top: 30px;
@@ -114,11 +114,11 @@ button:hover {
 }
 
 .div-h2 {
-  margin: 0 6rem;
+  margin: 0 8rem;
 }
 
 .texto-h2 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   margin-top: 30px;
@@ -132,11 +132,11 @@ button:hover {
 
 .div-secoes {
   background-color: white;
-  margin: 0 10rem;
+  margin: 0 15rem;
 }
 
 .o-que-faremos {
-  margin: 2em;
+  margin: 1rem;
 }
 
 .quem-somos, .servicos {
@@ -147,11 +147,11 @@ button:hover {
 
 .maressa-quem-somos {
   margin-top: auto;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .quem-somos-itens {
-  font-size: 30px;
+  font-size: 1.5rem;
   line-height: 4rem;
 }
 
@@ -220,7 +220,7 @@ button:hover {
 .titulo-revisao-benef,
 .titulo-revisao-vida-toda,
 .titulo-mandado-de-seg {
-  font-size: 2.1em;
+  font-size: 1.7rem;
   margin-bottom: 2.5rem;
 }
 
@@ -229,27 +229,8 @@ button:hover {
 .texto-revisao-beneficios,
 .texto-revisao-vida-toda,
 .texto-mandado-de-seguranca {
-  font-size: 1.3rem;
-}
-
-.texto-consultoria-previdenciaria {
-  margin-bottom: 3rem;
-}
-
-.texto-planejamento-previdenciario {
-  margin-bottom: 4.5rem;
-}
-
-.texto-revisao-beneficios {
-  margin-bottom: 4.1rem;
-}
-
-.texto-revisao-vida-toda {
-  margin-bottom: 1.2rem;
-}
-
-.texto-mandado-de-seguranca {
-  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  margin: 1rem;
 }
 
 .consultoria-previdenciaria {
@@ -299,7 +280,8 @@ button:hover {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
-  width: 58.7em;
+  width: 50.7rem;
+  height: 20rem;
   padding: 30px;
 }
 
@@ -434,50 +416,9 @@ button:hover {
   margin-left: 1rem;
 }
 
-@media(max-width: 1280px) {
-  .mandado-de-seguranca {
-    width: 50.7rem;
-  }
-
-  .texto-consultoria-previdenciaria,
-  .texto-planejamento-previdenciario {
-    margin-bottom: 2rem;
-  }
-
-  .texto-revisao-beneficios {
-    margin-bottom: 3rem;
-  }
-
-  .texto-revisao-vida-toda {
-    margin-bottom: 1rem;
-  }
-
-  .botao-whatsapp-consulta,
-  .botao-whatsapp-sobre-revisao,
-  .botao-whatsapp-mandado-de-seguranca,
-  .botao-whatsapp-planejamento,
-  .botao-whatsapp-revisao-vida-toda {
-    width: 19rem;
-  }
-}
-
-@media(max-width: 1024px) {
+@media(max-width: 1190px) {
   .div-secoes {
     margin: 0 5rem;
-  }
-
-  .texto-revisao-beneficios {
-    margin-bottom: 7.5rem;
-  }
-
-  .mandado-de-seguranca {
-    width: 46rem;
-  }
-}
-
-@media(max-width: 999px) {
-  .div-secoes {
-    margin: 0 1rem;
   }
 
   .aposentadoria, .beneficios {
@@ -545,7 +486,13 @@ button:hover {
   }
 }
 
-@media(max-width: 700px) {
+@media(max-width:870px) {
+  .div-secoes {
+    margin: 0;
+  }
+}
+
+@media(max-width: 745px) {
   .link-telefone, .link-email {
     font-size: 13px;
   }
@@ -639,23 +586,14 @@ button:hover {
 
   .div-aposentadoria-beneficios {
     align-items: center;
-    flex-direction: column;
   }
 
   .imagem-aposentadoria, .imagem-beneficios {
     width: 4rem;
   }
 
-  .aposentadoria {
-    width: 17rem;
-    height: 26rem;
-    padding: 20px;
-  }
-
-  .beneficios {
-    width: 17rem;
-    height: 23rem;
-    padding: 20px;
+  .aposentadoria, .beneficios {
+    width: 14rem;
   }
 
   .aposentadoria-li, .beneficios-li {
@@ -663,17 +601,19 @@ button:hover {
   }
 
   .container1, .container2 {
-    flex-direction: column;
     align-items: center;
   }
 
-  .mandado-de-seguranca,
   .consultoria-previdenciaria,
   .planejamento-previdenciario,
   .revisao-beneficios,
   .revisao-vida-toda {
-    width: 17rem;
-    height: 15rem;
+    width: 13rem;
+    height: 14rem;
+  }
+
+  .mandado-de-seguranca {
+    width: 30.5rem;
   }
 
   .titulo-consultoria-prev,
@@ -700,9 +640,14 @@ button:hover {
   }
 
   .botao-wa {
-    width: 17rem;
+    width: 12.5rem;
+    height: 2.8rem;
     border: none;
     cursor: pointer;
+  }
+
+  .rodape {
+    height: 23rem;
   }
 
   .logo-rodape {
@@ -728,36 +673,16 @@ button:hover {
     flex-direction: column;
   }
 
+  .div-desenvolvido-por {
+    margin-top: 25rem;
+  }
+
   .fa-arrow-circle-up {
     font-size: 2rem;
   }
-
-  @keyframes texto-cascata {
-    from {
-      transform: translateY(-60px);
-      opacity: 0;
-    }
-
-    to {
-      transform: rotateY(0px);
-      opacity: 1;
-    }
-  }
-
-  .titulo {
-    animation: texto-cascata 4s;
-  }
-
-  .texto-h2 {
-    animation: texto-cascata 4s;
-  }
-
-  .texto-h3 {
-    animation: texto-cascata 4s;
-  }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 590px) {
   .link-telefone, .link-email {
     font-size: .7rem;
   }
@@ -770,16 +695,26 @@ button:hover {
     width: 6rem;
   }
 
+  .div-secoes {
+    margin: 0;
+  }
+
+  .div-aposentadoria-beneficios {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .aposentadoria {
     width: 17rem;
-    height: 27rem;
-    padding: 20px;
   }
 
   .beneficios {
     width: 17rem;
-    height: 24rem;
-    padding: 20px;
+  }
+
+  .container1, .container2 {
+    flex-direction: column;
+    align-items: center;
   }
 
   .mandado-de-seguranca,
@@ -793,6 +728,7 @@ button:hover {
 
   .botao-wa {
     width: 16rem;
+    height: 2.5rem;
     border: none;
     cursor: pointer;
   }
@@ -821,5 +757,23 @@ button:hover {
 
   .fa-instagram {
     margin-left: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .aposentadoria, .beneficios {
+    width: 14rem;
+  }
+
+  .mandado-de-seguranca,
+  .consultoria-previdenciaria,
+  .planejamento-previdenciario,
+  .revisao-beneficios,
+  .revisao-vida-toda {
+    width: 13rem;
+  }
+
+  .botao-wa {
+    width: 13rem;
   }
 }
