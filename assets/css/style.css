@@ -412,10 +412,6 @@ button:hover {
   margin-top: 16.5rem;
 }
 
-.fa-instagram {
-  margin-left: 1rem;
-}
-
 @media(max-width: 1190px) {
   .div-secoes {
     margin: 0 5rem;
