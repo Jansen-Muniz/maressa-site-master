@@ -190,12 +190,12 @@ button:hover {
   list-style-type: none;
 }
 
-.imagem-aposentadoria, .imagem-beneficios {
-  width: 8.5rem;
+.imagem-aposentadoria {
+  width: 7rem;
 }
 
 .imagem-beneficios {
-  padding-bottom: 8px;
+  width: 6.3rem;
 }
 
 .fa-arrow-down {
@@ -401,7 +401,7 @@ button:hover {
   padding: .5rem;
 }
 
-.div-desenvolvido-por {
+.div-direitos-reservados {
   width: 100%;
   height: 2.5rem;
   background-color: rgb(48, 27, 27);
@@ -410,6 +410,10 @@ button:hover {
   display: flex;
   position: absolute;
   margin-top: 16.5rem;
+}
+
+.desenvolvido-por {
+  margin-left: .2rem;
 }
 
 @media(max-width: 1190px) {
@@ -669,12 +673,20 @@ button:hover {
     flex-direction: column;
   }
 
-  .div-desenvolvido-por {
+  .div-direitos-reservados {
     margin-top: 25rem;
+  }
+
+  .texto-direitos-reservados {
+    font-size: .8rem;
   }
 
   .fa-arrow-circle-up {
     font-size: 2rem;
+  }
+
+  .desenvolvido-por {
+    font-size: .8rem;
   }
 }
 
@@ -741,18 +753,16 @@ button:hover {
     font-size: .7rem;
   }
 
-  .div-desenvolvido-por {
+  .div-direitos-reservados {
     width: 100%;
     height: 2rem;
     margin-top: 20rem;
+    text-align: center;
+    flex-direction: column;
   }
 
-  .texto-desenvolvido-por, .fa-instagram {
-    font-size: .6rem;
-  }
-
-  .fa-instagram {
-    margin-left: 1rem;
+  .texto-direitos-reservados, .desenvolvido-por {
+    font-size: .7rem;
   }
 }
 
@@ -771,5 +781,13 @@ button:hover {
 
   .botao-wa {
     width: 13rem;
+  }
+
+  .div-direitos-reservados {
+    text-align: center;
+  }
+
+  .texto-direitos-reservados, .desenvolvido-por {
+    font-size: .5rem;
   }
 }
