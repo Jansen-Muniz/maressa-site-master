@@ -186,8 +186,19 @@ button:hover {
 
 .aposentadoria-li, .beneficios-li {
   padding: 5px;
-  font-size: 18px;
   list-style-type: none;
+}
+
+.texto-item-aposentadoria, .texto-item-beneficios {
+  font-size: 1.2rem;
+}
+
+.quem-somos-li {
+  list-style-type: none;
+}
+
+.texto-item-quem-somos {
+  font-size: 1.3rem;
 }
 
 .imagem-aposentadoria {
