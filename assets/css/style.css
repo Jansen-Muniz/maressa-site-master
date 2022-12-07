@@ -734,6 +734,17 @@ button:hover {
     height: 14rem;
   }
 
+  .texto-consultoria-previdenciaria,
+  .texto-planejamento-previdenciario,
+  .texto-revisao-beneficios,
+  .texto-mandado-de-seguranca {
+    font-size: .8rem;
+  }
+
+  .texto-revisao-vida-toda {
+    font-size: .7rem;
+  }
+
   .botao-wa {
     width: 16rem;
     height: 2.5rem;
