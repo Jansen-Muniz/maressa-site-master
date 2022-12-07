@@ -607,8 +607,8 @@ button:hover {
     width: 14rem;
   }
 
-  .aposentadoria-li, .beneficios-li {
-    font-size: 1.5rem;
+  .texto-item-aposentadoria, .texto-item-beneficios {
+    font-size: 1.2rem;
   }
 
   .container1, .container2 {
