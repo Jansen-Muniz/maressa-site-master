@@ -504,6 +504,18 @@ button:hover {
 }
 
 @media(max-width: 745px) {
+  @keyframes texto-cascata {
+    from {
+      transform: translateY(-55px);
+      opacity: 0;
+    }
+
+    to {
+      transform: rotateY(0px);
+      opacity: 1;
+    }
+  }
+
   .link-telefone, .link-email {
     font-size: 13px;
   }
