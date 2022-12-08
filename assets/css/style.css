@@ -191,14 +191,20 @@ button:hover {
 
 .texto-item-aposentadoria, .texto-item-beneficios {
   font-size: 1.2rem;
+  color: #7A7A7A;
 }
 
 .quem-somos-li {
   list-style-type: none;
 }
 
+.aposentadoria, .beneficios, .quem-somos-itens i {
+  color: rgb(100, 32, 32);
+}
+
 .texto-item-quem-somos {
   font-size: 1.3rem;
+  color: #7A7A7A;
 }
 
 .imagem-aposentadoria {
