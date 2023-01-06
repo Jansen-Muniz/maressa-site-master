@@ -4,6 +4,10 @@
   font-family: 'EB Garamond', serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,8 +52,7 @@ html {
   text-decoration: none;
   padding: 0;
   color: rgb(100, 32, 32);
-  font-size: 14px;
-  font-weight: 600;
+  font: 14px 600;
 }
 
 a:hover {
@@ -84,15 +87,11 @@ a:hover {
   animation: texto-cascata 4s;
 }
 
-
 main {
   justify-items: center;
   text-align: center;
-  background: url('/assets/img/casal-idosos.jpg');
+  background: url('/assets/img/casal-idosos.jpg') center center fixed;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
 }
 
@@ -103,18 +102,13 @@ main {
 .titulo {
   color: white;
   font-size: 4rem;
-  font-weight: 200;
   font-weight: bold;
   padding-top: 1rem;
 }
 
-/* button:hover {
+.botao-wa:hover{
   transform: scale(1.1);
   transition: all 0.5s;
-} */
-
-.botao-whatsapp-entre-em-contato:hover{
-  transform: translateY(-6px);
 }
 
 .div-h2 {
@@ -122,8 +116,7 @@ main {
 }
 
 .texto-h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font: 2rem bold;
   color: white;
   margin-top: 30px;
 }
@@ -159,35 +152,26 @@ main {
   line-height: 4rem;
 }
 
-.div-aposentadoria-beneficios {
+.aposentadoria-beneficios{
   display: flex;
-  padding: 12px;
   justify-content: center;
 }
 
-.lista-aposentadoria, .lista-beneficios {
+.container-aposentadoria, .container-beneficios {
+  border: 1px solid rgb(100, 32, 32);
   text-align: center;
   justify-content: center;
   justify-items: center;
   margin-top: 2px;
-  border: 1px solid rgb(100, 32, 32);
   width: 45%;
   padding: .4rem;
 }
 
 .titulo-aposentadoria, .titulo-beneficios {
-  margin-top: 3px;
-  margin-bottom: 3px;
+  margin: .5rem 0 .5rem 0;
 }
 
-.aposentadoria, .beneficios {
-  border: 1px solid rgb(100, 32, 32);
-  width: 20rem;
-  height: 28rem;
-  padding: 20px;
-}
-
-.aposentadoria-li, .beneficios-li {
+.aposentadoria-item, .beneficios-item {
   padding: 5px;
   list-style-type: none;
 }
@@ -197,7 +181,7 @@ main {
   color: #7A7A7A;
 }
 
-.quem-somos-li {
+.quem-somos-item {
   list-style-type: none;
 }
 
@@ -235,27 +219,21 @@ main {
   margin-top: 10px;
 }
 
-.titulo-consultoria-prev,
-.titulo-planejamento-prev,
-.titulo-revisao-benef,
-.titulo-revisao-vida-toda,
-.titulo-mandado-de-seg {
+.titulo-imagem{
   font-size: 1.7rem;
   margin-bottom: 2.5rem;
 }
 
-.texto-consultoria-previdenciaria,
-.texto-planejamento-previdenciario,
-.texto-revisao-beneficios,
-.texto-revisao-vida-toda,
-.texto-mandado-de-seguranca {
+.titulo-mandado-de-seg {
+  margin-top: 2rem;
+}
+.texto-imagem{
   font-size: 1.2rem;
   margin: 1rem;
 }
 
 .consultoria-previdenciaria {
-  background: url('/assets/img/imagem-1.png');
-  background-position: center center;
+  background: url('/assets/img/imagem-1.png') center center;
   background-size: cover;
   width: 40%;
   color: white;
@@ -263,8 +241,7 @@ main {
 }
 
 .planejamento-previdenciario {
-  background: url('/assets/img/imagem-2.jpeg');
-  background-position: center center;
+  background: url('/assets/img/imagem-2.jpeg') center center;
   background-size: cover;
   color: white;
   width: 40%;
@@ -272,8 +249,7 @@ main {
 }
 
 .revisao-beneficios {
-  background: url('/assets/img/imagem-3.jpeg');
-  background-position: center center;
+  background: url('/assets/img/imagem-3.jpeg') center center;
   background-size: cover;
   color: white;
   width: 40%;
@@ -281,27 +257,20 @@ main {
 }
 
 .revisao-vida-toda {
-  background: url('/assets/img/imagem-4.jpeg');
-  background-position: center center;
+  background: url('/assets/img/imagem-4.jpeg') center center;
   background-size: cover;
   color: white;
   width: 40%;
   padding: 30px;
 }
 
-.mandado-de-seguranca {
-  background: url('/assets/img/imagem-5.jpeg');
-  background-position: center center;
+.container-mandado-de-seguranca {
+  background: url('/assets/img/imagem-5.jpeg') center center;
   background-size: cover;
-  background-repeat: no-repeat;
   color: white;
-  padding: 15px;
-  margin-top: 12px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  width: 47.2rem;
-  height: 20rem;
+  margin: .6rem;
+  width: 47.8rem;
+  height: 25rem;
   padding: 30px;
 }
 
@@ -318,8 +287,7 @@ main {
 .titulo-aposentadoria,
 .titulo-beneficios,
 .titulo-servicos {
-  font-size: 40px;
-  font-weight: lighter;
+  font: 40px lighter;
   color: rgb(100, 32, 32);
 }
 
@@ -344,44 +312,29 @@ main {
   color: rgb(100, 32, 32);
 }
 
-.container-botao-consulta,
-.container-botao-planejamento,
-.container-botao-sobre-revisao,
-.container-botao-revisao-vida-toda,
-.container-botao-mandado-de-seguranca {
+.container-botao-whatsapp{
+  display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 2rem;
 }
 
-.container-botao-entre-em-contato{
-  margin: 2rem;
+.container-link-wa{
+  display: flex;
+  justify-items: center;
 }
 
 .botao-wa {
   background: rgb(58, 214, 58);
   border-radius: 25px;
-  height: 20rem;
   width: 20rem;
   border: none;
   cursor: pointer;
   padding: .5rem;
 }
 
-.botao-whatsapp-entre-em-contato {
-  background: rgb(58, 214, 58);
-  border-radius: 25px;
-  height: 40px;
-  width: 13rem;
-  border: none;
-  padding: .5rem;
-  margin: 20px;
-}
-
 .texto-whatsapp {
   color: white;
-  font-family: "Roboto", Sans-serif;
-  font-weight: bold;
-  font-size: 10px;
+  font: 1rem "Roboto", Sans-serif bold;
 }
 
 .icone-botao-wa {
@@ -411,8 +364,7 @@ main {
 }
 
 .info-contato {
-  font-weight: bold;
-  font-size: 20px;
+  font: 20px bold;
 }
 
 .container-endereco-contato-rodape {
@@ -438,419 +390,4 @@ main {
 
 .desenvolvido-por {
   margin-left: .2rem;
-}
-
-@media(max-width: 1190px) {
-  .div-h2 {
-    margin: 0 6rem;
-  }
-
-  .div-quem-somos {
-    margin: 0 5rem;
-  }
-
-  .lista-aposentadoria, .lista-beneficios {
-    width: 19rem;
-    height: 28rem;
-  }
-
-  .mandado-de-seguranca {
-    width: 38.5rem;
-  }
-
-  .consultoria-previdenciaria,
-  .planejamento-previdenciario,
-  .revisao-beneficios,
-  .revisao-vida-toda {
-    width: 17rem;
-    height: 15rem;
-  }
-
-  .titulo-consultoria-prev,
-  .titulo-planejamento-prev,
-  .titulo-revisao-benef,
-  .titulo-revisao-vida-toda,
-  .titulo-mandado-de-seg {
-    font-size: 1.3rem;
-  }
-
-  .texto-consultoria-previdenciaria,
-  .texto-planejamento-previdenciario,
-  .texto-revisao-beneficios,
-  .texto-mandado-de-seguranca {
-    font-size: 1rem;
-  }
-
-  .texto-revisao-vida-toda {
-    font-size: .8rem;
-  }
-
-  .texto-revisao-beneficios {
-    margin-bottom: 2.5rem;
-  }
-
-  .botao-wa {
-    width: 16rem;
-    border: none;
-    cursor: pointer;
-    padding: .7rem;
-  }
-
-  .texto-whatsapp{
-    font-size: .5rem;
-  }
-
-  .logo-rodape {
-    padding-top: .3rem;
-    width: 13rem;
-  }
-
-  .info-contato {
-    margin: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .endereco {
-    font-size: .8rem;
-  }
-
-  .fa-whatsapp, .fa-envelope {
-    font-size: .8rem;
-  }
-}
-
-@media(max-width:870px) {
-  .div-quem-somos {
-    margin: 0;
-  }
-}
-
-@media(max-width: 745px) {
-  @keyframes texto-cascata {
-    from {
-      transform: translateY(-55px);
-      opacity: 0;
-    }
-
-    to {
-      transform: rotateY(0px);
-      opacity: 1;
-    }
-  }
-
-  main {
-    margin-top: 1.5rem;
-  }
-
-  .link-telefone, .link-email {
-    font-size: 13px;
-  }
-
-  .div-logo {
-    text-align: center;
-  }
-
-  .cabecalho2 {
-    flex-direction: column;
-  }
-
-  .nav-item {
-    display: none;
-  }
-
-  .nav-item-menu-responsivo {
-    list-style-type: none;
-  }
-
-  .icone-menu {
-    display: block;
-    text-align: center;
-  }
-
-  .icone {
-    width: 1.5rem;
-  }
-
-  .icone-menu button {
-    background-color: rgb(100, 100, 100);
-    cursor: pointer;
-    border: none;
-    border-radius: 3px;
-    height: 1.5rem;
-  }
-
-  .menu-responsivo ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 2.5rem;
-  }
-
-  .mobile-menu .nav-item {
-    display: block;
-  }
-
-  .div-h2 {
-    margin: 0 2rem;
-  }
-
-  .nav-link {
-    font-size: 1rem;
-  }
-
-  .abrir {
-    display: block;
-  }
-
-  .titulo, .titulo-quem-somos {
-    font-size: 2rem;
-  }
-
-  .maressa-quem-somos,
-  .titulo-servicos,
-  .titulo-aposentadoria,
-  .titulo-beneficios {
-    font-size: 1.6rem;
-  }
-
-  .texto-item-quem-somos {
-    font-size: 1rem;
-  }
-
-  .o-que-faremos-texto {
-    font-size: 1.5rem;
-  }
-
-  .fa-arrow-down {
-    font-size: 2rem;
-  }
-
-  .texto-h2, .fa-check {
-    font-size: 1rem;
-  }
-
-  .texto-h3 {
-    font-size: 18px;
-  }
-
-  .div-quem-somos {
-    margin: 0;
-  }
-
-  .div-aposentadoria-beneficios {
-    align-items: center;
-  }
-
-  .imagem-aposentadoria, .imagem-beneficios {
-    width: 4rem;
-  }
-
-  .lista-aposentadoria, .lista-beneficios {
-    width: 14rem;
-  }
-
-  .texto-item-aposentadoria, .texto-item-beneficios {
-    font-size: 1rem;
-  }
-
-  .container1, .container2 {
-    align-items: center;
-  }
-
-  .consultoria-previdenciaria,
-  .planejamento-previdenciario,
-  .revisao-beneficios,
-  .revisao-vida-toda {
-    height: 12rem;
-  }
-
-  .titulo-consultoria-prev,
-  .titulo-planejamento-prev,
-  .titulo-revisao-benef,
-  .titulo-revisao-vida-toda,
-  .titulo-mandado-de-seg {
-    font-size: 1.3rem;
-  }
-
-  .texto-consultoria-previdenciaria,
-  .texto-planejamento-previdenciario,
-  .texto-revisao-beneficios,
-  .texto-mandado-de-seguranca {
-    font-size: 1rem;
-  }
-
-  .texto-mandado-de-seguranca{
-    margin: 2rem;
-  }
-
-  .texto-revisao-vida-toda {
-    font-size: .8rem;
-  }
-
-  .texto-revisao-beneficios {
-    margin-bottom: 4rem;
-  }
-
-  .botao-wa {
-    border: none;
-    cursor: pointer;
-    padding: .6rem;
-  }
-
-  .texto-whatsapp{
-    font-size: .5rem;
-  }
-
-  .rodape {
-    height: 23rem;
-  }
-
-  .logo-rodape {
-    padding-top: .5rem;
-    width: 13rem;
-  }
-
-  .info-contato {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-
-  .endereco {
-    font-size: .8rem;
-  }
-
-  .fa-whatsapp, .fa-envelope {
-    font-size: .8rem;
-  }
-
-  .container-rodape {
-    width: 18rem;
-    flex-direction: column;
-  }
-
-  .div-direitos-reservados {
-    margin-top: 25rem;
-  }
-
-  .texto-direitos-reservados {
-    font-size: .8rem;
-  }
-
-  .fa-arrow-circle-up {
-    font-size: 2rem;
-  }
-
-  .desenvolvido-por {
-    font-size: .8rem;
-  }
-}
-
-@media(max-width: 710px){
-  .container1, .container2{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mandado-de-seguranca{
-    width: 17rem;
-    height: 12rem;
-  }
-}
-
-@media(max-width: 590px) {
-  .link-telefone, .link-email {
-    font-size: .7rem;
-  }
-
-  .nav-link {
-    font-size: .9rem;
-  }
-
-  .logo {
-    width: 6rem;
-  }
-
-  .div-quem-somos {
-    margin: 0;
-  }
-
-  .div-aposentadoria-beneficios {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .container1, .container2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mandado-de-seguranca,
-  .consultoria-previdenciaria,
-  .planejamento-previdenciario,
-  .revisao-beneficios,
-  .revisao-vida-toda {
-    width: 16rem;
-    height: 14rem;
-  }
-
-  .texto-consultoria-previdenciaria,
-  .texto-planejamento-previdenciario,
-  .texto-revisao-beneficios,
-  .texto-mandado-de-seguranca {
-    font-size: .8rem;
-  }
-
-  .texto-revisao-vida-toda {
-    font-size: .7rem;
-  }
-
-  .texto-whatsapp {
-    font-size: .6em;
-  }
-
-  .revisao-vida-toda .texto-whatsapp{
-    font-size: .5em;
-  }
-
-  .rodape {
-    height: 20rem;
-  }
-
-  .container-endereco-rodape, .whatsapp-rodape, .email-rodape {
-    font-size: .7rem;
-  }
-
-  .div-direitos-reservados {
-    width: 100%;
-    height: 2rem;
-    margin-top: 20rem;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .texto-direitos-reservados, .desenvolvido-por {
-    font-size: .7rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .aposentadoria, .beneficios {
-    width: 14rem;
-  }
-
-  .mandado-de-seguranca,
-  .consultoria-previdenciaria,
-  .planejamento-previdenciario,
-  .revisao-beneficios,
-  .revisao-vida-toda {
-    width: 13rem;
-  }
-
-  .div-direitos-reservados {
-    text-align: center;
-  }
-
-  .texto-direitos-reservados, .desenvolvido-por {
-    font-size: .5rem;
-  }
 }
