@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'EB Garamond', serif;
 }
+
 
 a{
   text-decoration: none;
@@ -12,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.cabecalho1 {
+.cabecalho {
   background-color: rgb(100, 32, 32);
   display: flex;
   align-items: center;
@@ -22,24 +25,20 @@ html {
   height: 40px;
 }
 
-.cabecalho2 {
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
 
-.cabecalho2 ul {
+.menu ul {
   background-color: white;
   display: flex;
   gap: 5rem;
 }
 
-.icone-menu {
-  display: none;
-}
-
-.menu-responsivo {
+.icone-menu, .menu-responsivo {
   display: none;
 }
 
@@ -52,7 +51,7 @@ html {
   text-decoration: none;
   padding: 0;
   color: rgb(100, 32, 32);
-  font: 14px 600;
+  font: 14px;
 }
 
 a:hover {
@@ -87,11 +86,11 @@ a:hover {
   animation: texto-cascata 4s;
 }
 
-main {
+.conteudo-principal {
   justify-items: center;
   text-align: center;
-  background: url('/assets/img/casal-idosos.jpg') center center fixed;
-  background-size: cover;
+  background: url('/assets/img/imagem-principal.jpg') center fixed;
+  background-size:cover;
   width: 100%;
 }
 
@@ -102,7 +101,6 @@ main {
 .titulo {
   color: white;
   font-size: 4rem;
-  font-weight: bold;
   padding-top: 1rem;
 }
 
@@ -116,7 +114,7 @@ main {
 }
 
 .texto-h2 {
-  font: 2rem bold;
+  font: 2rem;
   color: white;
   margin-top: 30px;
 }
@@ -264,7 +262,7 @@ main {
   padding: 30px;
 }
 
-.container-mandado-de-seguranca {
+.mandado-de-seguranca {
   background: url('/assets/img/imagem-5.jpeg') center center;
   background-size: cover;
   color: white;
@@ -287,7 +285,7 @@ main {
 .titulo-aposentadoria,
 .titulo-beneficios,
 .titulo-servicos {
-  font: 40px lighter;
+  font-size: 2.5rem;
   color: rgb(100, 32, 32);
 }
 
@@ -332,13 +330,9 @@ main {
   padding: .5rem;
 }
 
-.texto-whatsapp {
+.icone-botao-wa, .texto-whatsapp {
   color: white;
-  font: 1rem "Roboto", Sans-serif bold;
-}
-
-.icone-botao-wa {
-  color: white;
+  font-size: .8rem;
 }
 
 .rodape {
@@ -364,7 +358,7 @@ main {
 }
 
 .info-contato {
-  font: 20px bold;
+  font-size: 2rem; 
 }
 
 .container-endereco-contato-rodape {
