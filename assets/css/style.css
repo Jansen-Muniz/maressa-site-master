@@ -89,7 +89,7 @@ a:hover {
 .conteudo-principal {
   justify-items: center;
   text-align: center;
-  background: url('/assets/img/imagem-principal.jpg') center fixed;
+  background: url('/assets/img/imagem-princ1.jpg') center center fixed;
   background-size:cover;
   width: 100%;
 }
