@@ -73,16 +73,8 @@ a:hover {
   }
 }
 
-.titulo {
-  animation: texto-cascata 4s;
-}
-
-.texto-h2 {
-  animation: texto-cascata 4s;
-}
-
-.texto-h3 {
-  animation: texto-cascata 4s;
+.titulo, .texto-h2, .texto-h3{
+  animation: texto-cascata 3s;
 }
 
 .conteudo-principal {
@@ -109,7 +101,7 @@ a:hover {
 }
 
 .div-h2 {
-  margin: 0 13rem;
+  margin: 0 15rem;
 }
 
 .texto-h2 {
@@ -312,7 +304,7 @@ a:hover {
 .container-botao-whatsapp{
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .container-link-wa{
